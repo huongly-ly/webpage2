@@ -1,0 +1,313 @@
+.brand {
+    font-weight: bold;
+    font-size: 30px;
+    color: #000; 
+}
+  
+.site-header {
+    position: relative;
+    background-color: rgb(202, 200, 200); 
+}
+  
+.site-header__wrapper {
+    padding-top: 1rem;
+    padding-bottom: 1rem; 
+}
+
+@media (min-width: 600px) {
+.site-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+ } 
+}
+
+@media (min-width: 600px) {
+.nav__wrapper {
+    display: flex;
+    list-style: none;
+ } 
+}
+  
+@media (max-width: 599px) {
+.nav__wrapper {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #080808;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out; 
+    
+}
+
+.nav__wrapper.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0); 
+    background-color: rgb(202, 200, 200);
+    } 
+}
+  
+.nav__item a {
+    display: block;
+    padding: 1.5rem 1rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav__item a:hover {
+    background-color: grey;
+}
+  
+.nav__toggle {
+    display: none; 
+}
+    
+@media (max-width: 599px) {
+.nav__toggle {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 1rem; 
+    } 
+}
+
+.hero-image {
+    background: url(../Materials/jumbotron.jpg) no-repeat center; 
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+  
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text .title-main {
+    font-size: 30px;
+    height: 12px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 53px;
+    letter-spacing: 1px;
+    color: rgb(221, 216, 216);
+
+}
+
+@font-face {
+    font-family: font_strong;
+    src:url('../Materials/fonts/RobotoCondensed-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+   }
+   .hero-text .title-desc {
+       font-family: font_strong;
+   }
+
+.hero-text .title-desc {
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    color: rgb(179, 176, 176);
+}
+
+.hero-text .button {
+    color: white;
+    background-color: transparent;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+
+.hero-text .button:hover {
+    background-color: rgb(182, 173, 173);
+    
+}
+  
+.hero-text .button5 {
+   background-color: rgb(18, 136, 214);
+   color: #fff;
+   border: 1px solid #ccc;
+
+}
+
+.section {
+    padding: 70px 0;
+    height: 150px;
+    background-color: rgb(216 212 212);
+}
+
+.section-title {
+    text-align: center;
+}
+
+.section-title-main {
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: font_strong;
+    src:url('../Materials/fonts/SortsMillGoudy-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+   }
+   .section-title .section-title-sub {
+       font-family: font_strong;
+   }
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(216 212 212);
+    padding: 20px 0;
+}
+  
+.flex-container > div {
+    width: 222px;
+    margin: 13px;
+    text-align: center;
+    font-size: 13px;
+    
+}
+
+.image {
+    padding: 30px 0;
+}
+
+
+
+.content-title {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.section-sub {
+    padding: 70px 0;
+    height: 150px;
+
+}
+
+.section2 {
+    background-color: rgb(216, 212, 212);
+    padding: 20px 0;
+}
+
+.section-sub__title {
+    text-align: center;
+}
+
+.section-sub__title-main {
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: font_strong;
+    src:url('../Materials/fonts/SortsMillGoudy-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+   }
+   .section-sub__title .section-sub__title-sub{
+       font-family: font_strong;
+   }
+
+.feaures {
+   display: flex;
+   margin: auto;
+   width: 65%;
+   padding: 20px 0;
+}
+
+.main-text {
+    text-align: center;
+}
+
+.main-text .content-section2 {
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-text .about-text {
+    margin-top: 15px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.btn {
+    padding: 30px 0;
+}
+
+.btn-start {
+    background-color: rgb(62,61,65);
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: auto;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}
+
+.btn-view {
+    background-color: rgb(120,191,182);
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: auto;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}
+
+.f-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -1rem;
+    flex-flow: row wrap;
+  }
+  
+  .f-grid-col {
+    flex: 1 0;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+  
